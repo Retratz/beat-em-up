@@ -13,7 +13,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{c045616f-acd2-73a2-1f28-983cec2abef5}</ProjectGuid>
+    <ProjectGuid>{785af22a-80f3-e6f9-3720-df41c28cb0be}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -53,10 +53,10 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Player Scripts\PlayerMovement.cs" />
-     <Compile Include="Assets\Scripts\Helper Scripts\TagManager.cs" />
-     <Compile Include="Assets\Scripts\Player Scripts\CharacterAnimation.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\PlayerAttack.cs" />
      <Compile Include="Assets\Scripts\Enemy Scripts\EnemyMovement.cs" />
+     <Compile Include="Assets\Scripts\Player Scripts\CharacterAnimation.cs" />
+     <Compile Include="Assets\Scripts\Helper Scripts\TagManager.cs" />
      <None Include="Assets\Shaders\AdditiveTint.shader" />
      <None Include="Assets\Shaders\UnlitLightMapEmissive.shader" />
      <None Include="Assets\Shaders\UntilIlum.shader" />
@@ -289,7 +289,7 @@
  <HintPath>D:/Unity/Unity Editors/2020.3.25f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>D:/beatemup/beat&apos;em up/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+ <HintPath>D:/beatemup/beat&apos;em up/beat-em-up/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>D:/Unity/Unity Editors/2020.3.25f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -637,34 +637,34 @@
  <HintPath>D:/Unity/Unity Editors/2020.3.25f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>D:/beatemup/beat&apos;em up/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>D:/beatemup/beat&apos;em up/beat-em-up/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>D:/beatemup/beat&apos;em up/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>D:/beatemup/beat&apos;em up/beat-em-up/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>D:/beatemup/beat&apos;em up/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>D:/beatemup/beat&apos;em up/beat-em-up/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>D:/beatemup/beat&apos;em up/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>D:/beatemup/beat&apos;em up/beat-em-up/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>D:/beatemup/beat&apos;em up/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>D:/beatemup/beat&apos;em up/beat-em-up/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>D:/beatemup/beat&apos;em up/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>D:/beatemup/beat&apos;em up/beat-em-up/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>D:/beatemup/beat&apos;em up/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="Unity.PlasticSCM.Editor">
- <HintPath>D:/beatemup/beat&apos;em up/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+ <HintPath>D:/beatemup/beat&apos;em up/beat-em-up/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>D:/beatemup/beat&apos;em up/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>D:/beatemup/beat&apos;em up/beat-em-up/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>D:/beatemup/beat&apos;em up/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>D:/beatemup/beat&apos;em up/beat-em-up/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.PlasticSCM.Editor">
+ <HintPath>D:/beatemup/beat&apos;em up/beat-em-up/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

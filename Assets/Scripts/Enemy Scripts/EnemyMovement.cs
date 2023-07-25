@@ -39,56 +39,48 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Attack();
-    }
-
-    private void FixedUpdate()
-    {
-        FollowTarget();
+        if (followPlayer)
+            FollowTarget();
+        else if (attackPlayer)
+            Attack();
     }
 
     void FollowTarget()
     {
-        
-        if (!followPlayer)
-            return;
+        float distanceToPlayer = Vector3.Distance(transform.position, playerTarget.position);
 
-        if (Vector3.Distance(transform.position, playerTarget.position) > attack_Distance)
+        if (distanceToPlayer <= attack_Distance)
         {
+            myBody.velocity = Vector3.zero;
+            enemyAnim.Walk(false);
 
+            followPlayer = false;
+            attackPlayer = true;
+        }
+        else
+        {
             transform.LookAt(playerTarget);
             myBody.velocity = transform.forward * enemy_speed;
-        }
 
-        if (myBody.velocity.sqrMagnitude != 0)
-        {
-                enemyAnim.Walk(true);
-                attackPlayer = false;
-        }
-        else 
-        {
-                myBody.velocity = Vector3.zero;
-                enemyAnim.Walk(false);
-
-                followPlayer = false;
-                attackPlayer = true;
+            enemyAnim.Walk(true);
+            attackPlayer = false;
         }
     }
-    
+
 
     void Attack()
     {
-        if (!attackPlayer)
-            return;
-
         current_attack_time += Time.deltaTime;
+
         if (current_attack_time > default_attack_time)
         {
-            enemyAnim.EnemyAttack(Random.Range(0,3));
-
+            enemyAnim.EnemyAttack(Random.Range(0, 3));
             current_attack_time = 0f;
         }
-        if(Vector3.Distance(transform.position,playerTarget.position) > attack_Distance + chase_player_after_attack)
+
+        float distanceToPlayer = Vector3.Distance(transform.position, playerTarget.position);
+
+        if (distanceToPlayer > attack_Distance + chase_player_after_attack)
         {
             attackPlayer = false;
             followPlayer = true;
