@@ -54,6 +54,8 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Player Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\PlayerAttack.cs" />
+     <Compile Include="Assets\Scripts\Player Scripts\AttackUnversal.cs" />
+     <Compile Include="Assets\Scripts\Player Scripts\CharacterAnimationDelegate.cs" />
      <Compile Include="Assets\Scripts\Enemy Scripts\EnemyMovement.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\CharacterAnimation.cs" />
      <Compile Include="Assets\Scripts\Helper Scripts\TagManager.cs" />
@@ -657,14 +659,14 @@
  <Reference Include="UnityEditor.UI">
  <HintPath>D:/beatemup/beat&apos;em up/beat-em-up/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.PlasticSCM.Editor">
+ <HintPath>D:/beatemup/beat&apos;em up/beat-em-up/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Rider.Editor">
  <HintPath>D:/beatemup/beat&apos;em up/beat-em-up/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/beatemup/beat&apos;em up/beat-em-up/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="Unity.PlasticSCM.Editor">
- <HintPath>D:/beatemup/beat&apos;em up/beat-em-up/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

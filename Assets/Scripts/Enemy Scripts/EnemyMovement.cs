@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Player_Scripts;
 using UnityEditor;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -30,7 +31,7 @@ public class EnemyMovement : MonoBehaviour
         playerTarget = GameObject.FindWithTag(TagManager.Tags.PLAYER_TAG).transform;
     }
 
-    void Start()
+    void Start()    
     {
         followPlayer = true;
         current_attack_time = default_attack_time;

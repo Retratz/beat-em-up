@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 3872725017694805783}
   - component: {fileID: 4664701315441193079}
   - component: {fileID: 719259371437623541}
-  m_Layer: 0
+  - component: {fileID: 1734968536}
+  m_Layer: 7
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,6 +60,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcdd055c409308343a8bfec6b7d76ade, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemy_speed: 2
+  attack_Distance: 1
+--- !u!54 &1734968536
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7800017077066298108}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1001 &3193379651253732233
 PrefabInstance:
   m_ObjectHideFlags: 0
